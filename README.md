@@ -31,9 +31,9 @@ TEEINBLUE_API_URL=https://api.teeinblue.com/openapi/v1
 DB_HOST=192.168.1.12
 DB_PORT=5432
 DB_NAME=teeinblue
-DB_USER=saleor
-DB_PASSWORD=saleor
-REDIS_URL=redis://:password@host:port/0
+DB_USER=your_user
+DB_PASSWORD=your_password
+REDIS_URL=redis://:your_password@host:port/0
 ```
 
 ### Bước 2: Khởi chạy
