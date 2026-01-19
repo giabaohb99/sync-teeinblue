@@ -17,6 +17,15 @@ def upsert_order(db: Session, order_data: schemas.OrderCreate):
         db_order.customer_info = order_data.customer_info
         db_order.line_items = order_data.line_items
         db_order.full_data = order_data.full_data
+        
+        # Update new fields
+        db_order.currency = order_data.currency
+        db_order.financial_status = order_data.financial_status
+        db_order.total_price = order_data.total_price
+        db_order.platform_domain = order_data.platform_domain
+        db_order.address = order_data.address
+        db_order.order_name = order_data.order_name
+        
         db_order.synced_at = datetime.now()
     else:
         # Create new
@@ -26,7 +35,14 @@ def upsert_order(db: Session, order_data: schemas.OrderCreate):
             status=order_data.status,
             customer_info=order_data.customer_info,
             line_items=order_data.line_items,
-            full_data=order_data.full_data
+            full_data=order_data.full_data,
+            # New fields
+            currency=order_data.currency,
+            financial_status=order_data.financial_status,
+            total_price=order_data.total_price,
+            platform_domain=order_data.platform_domain,
+            address=order_data.address,
+            order_name=order_data.order_name
         )
         db.add(db_order)
     

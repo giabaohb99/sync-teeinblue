@@ -1,19 +1,30 @@
-from sqlalchemy import Column, String, DateTime, JSON, Integer
+from sqlalchemy import Column, String, DateTime, JSON, Integer, Float
 from sqlalchemy.sql import func
 from .database import Base
 
 class Order(Base):
     __tablename__ = "orders"
 
+    # 1. Basic Identity
     id = Column(String, primary_key=True, index=True) # Teeinblue ID
-    ref_id = Column(String, index=True) # Order Number (e.g. #1234)
-    status = Column(String) # Processing status
+    order_name = Column(String, nullable=True) # e.g. #1003
+    ref_id = Column(String, index=True) # External Ref ID
     
-    # Storing complex objects as JSON
+    # 2. Status & Values
+    status = Column(String) # Teeinblue Processing Status
+    financial_status = Column(String, nullable=True) # e.g. paid
+    total_price = Column(Float, nullable=True)
+    currency = Column(String, nullable=True)
+    
+    # 3. Source Info
+    platform_domain = Column(String, nullable=True)
+    
+    # 4. JSON Data (Complex Structures) at the end
     customer_info = Column(JSON, nullable=True)
+    address = Column(JSON, nullable=True)
     line_items = Column(JSON, nullable=True)
+    full_data = Column(JSON, nullable=True) # Raw full JSON
     
-    full_data = Column(JSON, nullable=True) # Full JSON from Teeinblue
-    
+    # 5. Timestamps
     synced_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
     created_at = Column(DateTime(timezone=True), server_default=func.now())

@@ -15,6 +15,10 @@ class Settings(BaseSettings):
     # Redis
     REDIS_URL: Optional[str] = None
 
+    # Scheduler Config
+    SYNC_INTERVAL_QUICK_MINUTES: int = 1
+    SYNC_INTERVAL_DEEP_MINUTES: int = 60
+
     @property
     def DATABASE_URL(self) -> str:
         # Construct Postgres URL from parts

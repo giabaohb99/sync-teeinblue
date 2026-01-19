@@ -1,0 +1,101 @@
+{
+    "id": 38893712,
+    "order_name": "#1003",
+    "platform_order_id": "6728781201658",
+    "test_order": true,
+    "total_price": 116.9,
+    "currency": "USD",
+    "fulfillment_status": null,
+    "financial_status": "paid",
+    "status": "created",
+    "tib_status": 2,
+    "shipping_method": null,
+    "instance_name": "MyPOD",
+    "platform_domain": "mypod-5736.myshopify.com",
+    "created_at": "2026-01-19T03:58:28.000000Z",
+    "deleted_at": null,
+    "address": {
+        "first_name": "gia",
+        "last_name": "bao",
+        "company": null,
+        "phone": null,
+        "address1": "a",
+        "address2": "ninh kieu can tho",
+        "city": "cantho",
+        "province": "Texas",
+        "province_code": "TX",
+        "country": "United States",
+        "country_code": "US",
+        "zip": "78000"
+    },
+    "line_items": [
+        {
+            "id": 62380114,
+            "campaign_id": 892783,
+            "customization_id": 58803058,
+            "title": "mug",
+            "fulfillment_status": null,
+            "quantity": 5,
+            "is_fulfilled": false,
+            "platform_sku": "myp_892783_7452962",
+            "sku": "myp_892783_7452962",
+            "by_teeinblue": true,
+            "status": 1,
+            "created_at": "2026-01-19T04:00:31.000000Z",
+            "updated_at": "2026-01-19T04:00:31.000000Z",
+            "deleted_at": null,
+            "properties": [
+                {
+                    "name": "_customization_id",
+                    "value": "4b1d888e-efd7-49bb-9487-a710e7fc576b"
+                },
+                {
+                    "name": "_customization_image",
+                    "value": "https://cdn.teeinblue.com/customizations/4b1d888e-efd7-49bb-9487-a710e7fc576b.jpg"
+                },
+                {
+                    "name": "_tib_design_link_1",
+                    "value": "https://cdn.teeinblue.com/designs/4b1d888e-efd7-49bb-9487-a710e7fc576b/4b1d888e-efd7-49bb-9487-a710e7fc576b-884196.png?printarea=front"
+                }
+            ],
+            "tracking_number": null,
+            "tracking_url": null,
+            "shipment_carrier": null,
+            "print_areas": [
+                {
+                    "id": 21221045,
+                    "url": "https://cdn.teeinblue.com/designs/4b1d888e-efd7-49bb-9487-a710e7fc576b/4b1d888e-efd7-49bb-9487-a710e7fc576b-884196.png",
+                    "thumbnail": "https://cdn.teeinblue.com/designs/4b1d888e-efd7-49bb-9487-a710e7fc576b/4b1d888e-efd7-49bb-9487-a710e7fc576b-884196_thumbnail.webp",
+                    "created_at": "2026-01-19T04:00:31.000000Z",
+                    "updated_at": "2026-01-19T04:00:34.000000Z",
+                    "key": "Front",
+                    "width": 1400,
+                    "height": 1400,
+                    "processing_at": "2026-01-19 04:00:32",
+                    "processed_at": "2026-01-19 04:00:34",
+                    "cancelled_at": null,
+                    "customization_uuid": null,
+                    "customization_id": 58803058,
+                    "error_message": null,
+                    "is_processing": false
+                }
+            ],
+            "variant": {
+                "id": 7452962,
+                "sku": "2",
+                "color": "\u0111en",
+                "size": "13z"
+            },
+            "fulfiller": null
+        }
+    ],
+    "customer": {
+        "id": 38449445,
+        "platform_linked_id": "6728781201658",
+        "first_name": "gia",
+        "last_name": "bao",
+        "email": "hb.giabao99@gmail.com",
+        "phone": null,
+        "created_at": "2026-01-19T04:00:31.000000Z"
+    }
+}

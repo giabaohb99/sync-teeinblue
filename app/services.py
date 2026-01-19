@@ -81,7 +81,14 @@ def sync_teeinblue_orders_service(start_days_ago=1, end_days_ago=0):
                     status=str(details.get('status')),
                     customer_info=details.get('customer'),
                     line_items=details.get('line_items'),
-                    full_data=details 
+                    full_data=details,
+                    # New Mappings
+                    currency=details.get('currency'),
+                    financial_status=details.get('financial_status'),
+                    total_price=details.get('total_price'),
+                    platform_domain=details.get('platform_domain'),
+                    address=details.get('address'),
+                    order_name=details.get('order_name')
                 )
                 
                 # 4. Save to DB

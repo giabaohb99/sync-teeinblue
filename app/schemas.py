@@ -19,6 +19,14 @@ class OrderBase(BaseModel):
     status: Optional[str] = None
     customer_info: Optional[Any] = None
     line_items: Optional[Any] = None
+    # New fields
+    currency: Optional[str] = None
+    financial_status: Optional[str] = None
+    total_price: Optional[float] = None
+    platform_domain: Optional[str] = None
+    address: Optional[Any] = None
+    order_name: Optional[str] = None
+    
     full_data: Optional[Any] = None
 
 class OrderCreate(OrderBase):
