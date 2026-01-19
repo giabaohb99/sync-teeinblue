@@ -14,7 +14,7 @@
         -   `status` (String): Current status (e.g., "Ready To Fulfill").
         -   `customer_info` (JSON): Name, Address, etc.
         -   `line_items` (JSON): Item details.
-        -   `print_url` (String, Nullable): URL to the print file.
+        -   `full_data` (JSON, Nullable): Full raw JSON response from Teeinblue.
         -   `synced_at` (DateTime): Last sync time.
 - [x] **Migration System**: Initialize `alembic` to handle schema changes.
 - [x] **Auto-Creation**: Ensure tables are created on startup if they don't exist.
@@ -39,3 +39,9 @@
 ## 6. Deployment
 - [x] **Docker**: Dockerfile for the API.
 - [x] **Compose**: Service definition including Database connection.
+
+
+## 7. Documentation & Finalization
+- [x] **README**: Create detailed documentation (Vietnamese) covering Setup, Logic, and Migrations.
+- [x] **Gitignore**: Add standard python/docker ignore rules.
+- [x] **Clean up**: Remove legacy/unused files.

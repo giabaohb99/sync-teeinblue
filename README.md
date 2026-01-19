@@ -33,7 +33,7 @@ DB_PORT=5432
 DB_NAME=teeinblue
 DB_USER=your_user
 DB_PASSWORD=your_password
-REDIS_URL=redis://:your_password@host:port/0
+REDIS_URL=redis://:your_password@your_host:port/0
 ```
 
 ### Bước 2: Khởi chạy
