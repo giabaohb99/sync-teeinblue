@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  teeinblue-api:
+    build: .
+    container_name: teeinblue-api
+    restart: unless-stopped
+    ports:
+      - "8005:8000"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    # Ensure it can talk to host services if needed
+    # extra_hosts:
+    #   - "host.docker.internal:host-gateway"
